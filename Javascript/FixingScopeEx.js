@@ -1,4 +1,4 @@
-// The scope of `random` is too loose 
+/ The scope of `random` is too loose 
 const random = Math.floor(Math.random() * 3);
 
 const getRandEvent = () => {
@@ -26,14 +26,11 @@ const getTrainingDays = event => {
   return days;
 };
 
-// The scope of `name` is too tight 
-const logEvent = event => {
-  const name = 'Nala';
+const logEvent = (name,event) => {
   console.log(`${name}'s event is: ${event}`);
 };
 
-const logTime = days => {
-  const name = 'Nala';
+const logTime = (name,days) => {
   console.log(`${name}'s time to train is: ${days} days`);
 };
 
