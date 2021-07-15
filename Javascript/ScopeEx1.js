@@ -17,3 +17,7 @@ const test2 = () => {
    }
    console.log('b = ' + b);
 }
+
+test1();
+
+test2();
