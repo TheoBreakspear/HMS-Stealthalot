@@ -1,14 +1,11 @@
-// The scope of `random` is too loose 
-const random = Math.floor(Math.random() * 3);
-const name = 'Nala'
-
 const getRandEvent = () => {
-  if (random === 0) {
-    return 'Marathon';
-  } else if (random === 1) {
-    return 'Triathlon';
-  } else if (random === 2) {
-    return 'Pentathlon';
+   const random = Math.floor(Math.random() * 3);
+   if (random === 0) {
+      return 'Marathon';
+   } else if (random === 1) {
+      return 'Triathlon';
+   } else if (random === 2) {
+      return 'Pentathlon';
   }
 };
 
@@ -37,15 +34,12 @@ const logTime = (name, days) => {
 
 const event = getRandEvent();
 const days = getTrainingDays(event);
-// Define a `name` variable. Use it as an argument after updating logEvent and logTime 
-
-
+const name = 'Nala'
 logEvent(name, event);
 logTime(name, days);
 
 const event2 = getRandEvent();
 const days2 = getTrainingDays(event2);
 const name2 = 'Warren';
- 
 logEvent(name2, event2);
 logTime(name2, days2);
