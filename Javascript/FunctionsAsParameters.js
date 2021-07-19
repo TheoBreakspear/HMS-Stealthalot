@@ -23,7 +23,7 @@ const checkThatTwoPlusTwoEqualsFourAMillionTimes = () => {
  const checkConsistentOutput = (someFunction, someArgument) => {
    const test1 = someFunction(someArgument);
    const test2 = someFunction(someArgument);
-   console.log(test1 === test2 ? test1:'This function returned inconsistent results');
+   console.log(test1 === test2 ? return test1: return 'This function returned inconsistent results');
  }
  
  //calling another higher order function
