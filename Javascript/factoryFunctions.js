@@ -1,7 +1,7 @@
 robotFactory = (model, mobile) => {
    return {
-     model: model,
-     mobile: mobile,
+     model,
+     mobile,
      beep() {
        console.log('Beep Boop');
      }
