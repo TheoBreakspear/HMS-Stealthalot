@@ -29,3 +29,7 @@ class HospitalEmployee {
  const nurseOlynyk = new Nurse('Olynyk', ['Trauma', 'Pediatrics']);
 
  console.log(nurseOlynyk);
+
+ nurseOlynyk.takeVacationDays(5);
+
+ console.log('Days left = ' + nurseOlynyk.remainingVacationDays);
